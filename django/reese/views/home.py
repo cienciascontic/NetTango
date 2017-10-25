@@ -48,7 +48,7 @@ def fpLogDump(logs, limit_per_team):
         html += "<div class='share'>"
         html += "<div class='team-box'>TEAM<br><span style='font-size: 60px; line-height: 60px;'>&#{}</span></div>".format(log.groupName)
         html += "<div class='stats-box'>"
-        html += "ticks: {}<br>frogs: {}<br>generations: {}<br>average size: {}<br>".format(log.tickCount, log.frogCount, log.generations, log.avgSize)
+        html += "tics: {}<br>frogs: {}<br>generations: {}<br>average size: {}<br>".format(log.tickCount, log.frogCount, log.generations, log.avgSize)
         html += "fly count: {}<br>energy gain: {}".format(settings["max-flies"], settings["energy-gain"])
         html += "</div>"  # stats box
         html += '<div class="plot-box" style="background-image: url(/site_media/{});"></div>'.format(log.plot)
