@@ -116,10 +116,10 @@
     </p>
     <ul>
       <li><a href="challenge1">Desafío 1</a>: ¡Explosión de la población!</li>
-      <li><a href="challenge2">Challenge 2</a>: Ranas pequeñas</li>
-      <li><a href="challenge3">Challenge 3</a>: Ranas grandes</li>
-      <li><a href="challenge4">Challenge 4</a>: Estabilizando la selección</li>
-      <li><a href="challenge5">Challenge 5</a>: ¡Selección disruptiva!</li>
+      <li><a href="challenge2">Desafío 2</a>: Ranas pequeñas</li>
+      <li><a href="challenge3">Desafío 3</a>: Ranas grandes</li>
+      <li><a href="challenge4">Desafo 4</a>: Estabilizando la selección</li>
+      <li><a href="challenge5">Desafío 5</a>: ¡Selección disruptiva!</li>
     </ul>
   </div>
 
@@ -206,24 +206,24 @@
   </model>
   <workspace>
     <menu>
-      <block name="hop">
+      <block name="avanzar">
         <param name="distance" type="range" min="1" max="4" step="0.2" default="1" />
       </block>
-      <block name="chirp" />
+      <block name="croar" />
       <block name="izquierda">
         <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="degrees" />
       </block>
       <block name="derecha">
         <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="degrees" />
       </block>
-      <block name="spin" />
-      <block name="hunt">
+      <block name="rotar" />
+      <block name="cazar">
         <param name="duration" type="range" min="1" max="10" step="1" default="7" random="true" label="seconds" unit="s" />
       </block>
-      <block name="chance" type="if" instances="1">
+      <block name="probabilidad" type="if" instances="1">
         <param name="probability" type="range" min="0" max="100" step="1" default="25" unit="%" />
       </block>
-      <block name="if" type="if" instances="1">
+      <block name="si" type="if" instances="1">
         <param name="condition">
           <v>full?</v>
           <v>hungry?</v>
