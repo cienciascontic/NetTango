@@ -729,7 +729,7 @@ else if(y>1.3)z.a0("chirp1")
 else if(y>0.95)z.a0("chirp2")
 else if(y>=0.6)z.a0("chirp3")
 else z.a0("chirp4")
-z.fr="chirp"
+z.fr="croar"
 z.db=0}},
 iI:{"^":"n:0;a",
 $0:function(){var z=this.a
@@ -743,7 +743,7 @@ z.db=y
 return y}},
 iN:{"^":"n:0;a",
 $0:function(){var z=this.a
-z.fr="hunt"
+z.fr="cazar"
 z.dx=0}},
 iO:{"^":"n:1;a",
 $1:function(a){var z,y,x,w
