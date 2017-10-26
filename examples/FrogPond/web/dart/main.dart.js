@@ -3083,15 +3083,15 @@ z.fillStyle="white"
 z.font="200 15px Nunito, sans-serif"
 z.textAlign="right"
 z.textBaseline="top"
-y="Ticks: "+this.gat()
+y="Tics: "+this.gat()
 x=this.x
 if(typeof x!=="number")return x.j();(z&&C.a).M(z,y,x-10,10)
 x=this.Q
-y="Frogs: "+H.e(x.h(0,C.i),"$isQ").a.length
+y="Ranas: "+H.e(x.h(0,C.i),"$isQ").a.length
 w=this.x
 if(typeof w!=="number")return w.j()
 C.a.M(z,y,w-10,35)
-w="Generations: "+this.y1
+w="Generaciones: "+this.y1
 y=this.x
 if(typeof y!=="number")return y.j()
 C.a.M(z,w,y-10,60)
