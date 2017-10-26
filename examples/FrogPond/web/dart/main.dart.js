@@ -694,7 +694,7 @@ else if(y>1.3)z.a0("hop1")
 else if(y>0.95)z.a0("hop2")
 else if(y>=0.6)z.a0("hop3")
 else z.a0("hop4")
-z.fr="hop"}},
+z.fr="saltar"}},
 iV:{"^":"n:0;a",
 $0:function(){this.a.aD()}},
 iW:{"^":"n:1;a",
@@ -1416,7 +1416,7 @@ t.i(null)
 y=H.h(new W.aq(0,z.a,z.b,W.ar(y),!1),[H.b(z,0)])
 y.Z()
 H.a(y,"$isE",[H.b(z,0)],"$asE")
-this.dy.af("avanzar",new L.iv())
+this.dy.af("saltar",new L.iv())
 this.dy.af("croar",new L.iw())
 this.dy.af("izquierda",new L.iz())
 this.dy.af("derecha",new L.iA())
