@@ -2831,7 +2831,7 @@ this.k2=!0
 this.e=105},
 v:{
 kw:function(a){var z=new U.cH(null,null,null,null,a,null,0,0,0,0,0,null,null,"start","hop","#3399aa","white","14px","rgba(255, 255, 255, 0.3)",!1,null,null,null,null,null,null,!1,!1,null)
-z.ay(a,"comenzar")
+z.ay(a,"start")
 z.ch="#c92"
 z.k4=null
 z.k4=z
