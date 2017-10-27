@@ -2680,7 +2680,7 @@ a.font="400 13px Nunito, sans-serif"
 a.textAlign="center"
 a.textBaseline="bottom"
 if(!this.x2||!this.y1){z=this.gA(this)
-C.a.M(a,H.o(H.C(typeof z==="string"?this.gA(this):this.cn(this.k2))),u,this.ry-13)}else C.a.M(a,"between "+H.o(this.go)+" and "+H.o(this.id)+" "+H.o(this.r1),this.rx+this.x1/2,this.ry-13)
+C.a.M(a,H.o(H.C(typeof z==="string"?this.gA(this):this.cn(this.k2))),u,this.ry-13)}else C.a.M(a,"entre "+H.o(this.go)+" y "+H.o(this.id)+" "+H.o(this.r1),this.rx+this.x1/2,this.ry-13)
 z=this.r2
 if(z!=null&&z!==""){a.textBaseline="middle"
 a.textAlign="left"
