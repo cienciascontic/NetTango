@@ -2690,7 +2690,7 @@ s=this.x+this.z-20
 a.fillStyle="#39a"
 a.textAlign="right"
 a.textBaseline="middle"
-C.a.M(a,"random?",t-24,s)
+C.a.M(a,"aleatorio?",t-24,s)
 a.beginPath()
 U.bB(a,t-19,s-9,18,18,3)
 a.lineWidth=2
