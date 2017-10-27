@@ -768,7 +768,7 @@ z.fx.Q=!0
 z.fx=null}z.aD()}},
 iX:{"^":"n:0;a",
 $0:function(){var z=this.a
-z.fr="hunt"
+z.fr="cazar"
 z.dy=10}},
 iY:{"^":"n:0;a",
 $0:function(){this.a.aD()}},
@@ -1487,23 +1487,23 @@ iG:{"^":"n:3;",
 $2:[function(a,b){var z,y,x,w,v
 if(!(a instanceof L.am))return!1
 z=J.B(b)
-if(z.E(b,"starving?")){y=a.fy
+if(z.E(b,"deshauciado?")){y=a.fy
 if(typeof y!=="number")return y.ac()
 y=y<=0}else y=!1
 if(y)return!0
-else{if(z.E(b,"hungry?")){y=a.fy
+else{if(z.E(b,"hambriento?")){y=a.fy
 x=J.d7(a.cy.ch.h(0,"energy-gain"),0.2)
 if(typeof y!=="number")return y.ac()
 x=C.b.ac(y,x)
 y=x}else y=!1
 if(y)return!0
-else{if(z.E(b,"full?")){y=a.fy
+else{if(z.E(b,"lleno?")){y=a.fy
 x=J.d7(a.cy.ch.h(0,"energy-gain"),0.85)
 if(typeof y!=="number")return y.ab()
 x=C.b.ab(y,x)
 y=x}else y=!1
 if(y)return!0
-else{if(z.E(b,"see-water?")){z=a.x
+else{if(z.E(b,"ve-agua?")){z=a.x
 if(typeof z!=="number")return z.n()
 w=z*1.6
 a.b3(w)
