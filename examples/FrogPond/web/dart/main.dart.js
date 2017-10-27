@@ -496,7 +496,7 @@ this.cx=y
 y.e=1
 y.b=0
 y.c=30
-y.Q=new L.j1(this,"spin")
+y.Q=new L.j1(this,"rotar")
 y.N(0,0)
 this.cx.N(z,1)
 y=this.cx
