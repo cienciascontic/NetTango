@@ -1487,7 +1487,7 @@ iG:{"^":"n:3;",
 $2:[function(a,b){var z,y,x,w,v
 if(!(a instanceof L.am))return!1
 z=J.B(b)
-if(z.E(b,"deshauciado?")){y=a.fy
+if(z.E(b,"famélico?")){y=a.fy
 if(typeof y!=="number")return y.ac()
 y=y<=0}else y=!1
 if(y)return!0
