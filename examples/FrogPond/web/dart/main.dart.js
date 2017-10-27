@@ -2831,7 +2831,7 @@ this.k2=!0
 this.e=105},
 v:{
 kw:function(a){var z=new U.cH(null,null,null,null,a,null,0,0,0,0,0,null,null,"start","hop","#3399aa","white","14px","rgba(255, 255, 255, 0.3)",!1,null,null,null,null,null,null,!1,!1,null)
-z.ay(a,"comenzar")
+z.ay(a,"start")
 z.ch="#c92"
 z.k4=null
 z.k4=z
@@ -4138,7 +4138,7 @@ throw H.i(new P.M('Cannot extract URI from "'+H.o(z)+'"'))},
 jq:[function(a,b){var z,y,x,w,v,u,t,s,r,q,p,o,n,m,l,k,j,i
 z=new H.cN(!0,[]).aL(b.data)
 y=J.a4(z)
-switch(y.h(z,"command")){case"start":init.globalState.b=H.u(y.h(z,"id"))
+switch(y.h(z,"command")){case"comenzar":init.globalState.b=H.u(y.h(z,"id"))
 x=H.C(y.h(z,"functionName"))
 w=x==null?init.globalState.cx:init.globalFunctions[x]()
 v=y.h(z,"args")
