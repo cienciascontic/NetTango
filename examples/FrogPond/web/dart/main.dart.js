@@ -1497,7 +1497,7 @@ if(typeof y!=="number")return y.ac()
 x=C.b.ac(y,x)
 y=x}else y=!1
 if(y)return!0
-else{if(z.E(b,"lleno?")){y=a.fy
+else{if(z.E(b,"satisfecho?")){y=a.fy
 x=J.d7(a.cy.ch.h(0,"energy-gain"),0.85)
 if(typeof y!=="number")return y.ab()
 x=C.b.ab(y,x)
