@@ -472,7 +472,7 @@ z={}
 if(J.a0(b,"random")){y=$.$get$a3().a_(90)
 if(a==="derecha")y*=-1}else if(typeof b==="number")y=a==="derecha"?b*-1:b
 else if(a==="derecha")y=$.$get$a3().a_(90)*-1
-else y=a==="left"?$.$get$a3().a_(90):$.$get$a3().a_(180)-90
+else y=a==="izquierda"?$.$get$a3().a_(90):$.$get$a3().a_(180)-90
 z.a=a
 if(b!=null)z.a=a+" "+H.o(b)
 x=new U.ak(null,0,0,0,0,!0,1,null,null,null,null)
@@ -1467,7 +1467,7 @@ $2:[function(a,b){if(a instanceof L.am)a.hw(b)},null,null,4,0,null,1,2,"call"]},
 iw:{"^":"n:3;",
 $2:[function(a,b){if(a instanceof L.am)a.hs()},null,null,4,0,null,1,2,"call"]},
 iz:{"^":"n:3;",
-$2:[function(a,b){if(a instanceof L.am)a.dT("left",b)},null,null,4,0,null,1,2,"call"]},
+$2:[function(a,b){if(a instanceof L.am)a.dT("izquierda",b)},null,null,4,0,null,1,2,"call"]},
 iA:{"^":"n:3;",
 $2:[function(a,b){if(a instanceof L.am)a.dT("derecha",b)},null,null,4,0,null,1,2,"call"]},
 iB:{"^":"n:3;",
