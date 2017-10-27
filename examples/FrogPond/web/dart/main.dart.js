@@ -2593,7 +2593,7 @@ w.r2=this.r2
 this.aC(w)
 return w},
 gA:function(a){var z,y
-if(this.x2&&this.y1)return"random"
+if(this.x2&&this.y1)return"aleatorio"
 else{z=this.r1
 z=z!=null&&z!==""
 y=this.k2
