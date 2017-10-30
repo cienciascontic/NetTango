@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="packages/NetTango/css/toolbar.css">
   <link rel="stylesheet" href="packages/NetTango/css/settings.css">
   <link rel="shortcut icon" href="images/favicon/favicon.ico">
-  <title>Frog Pond Evolution | Northwestern University</title>
+  <title>Laguna de las Ranas - Evolución | Northwestern University</title>
 </head>
 
 
@@ -37,9 +37,9 @@
 
 
     <!-- CHALLENGE 3 -->
-    <h1>Challenge 3: Big Frogs</h1>
+    <h1>Desafío 3: Ranas grandes</h1>
     <p>
-    For the third challenge, see if you can create a population that has almost all big frogs.
+    Para el tercer desafío, vean si pueden crear una población estable de casi todas ranas grandes.
     </p>
 
     <!-- CHALLENGE 4 -->
@@ -92,7 +92,7 @@
 
     <!-- FLY COUNT -->
     <div class="setting">
-      <p>About how many flies should be in the pond?</p>
+      <p>¿Cuántas moscas habrá en la laguna?</p>
       <input type="range" min="0" max="60" value="30" step="1" id="setting-max-flies">
       <output for="setting-max-flies" id="output-max-flies">30</output>
     </div>
@@ -100,7 +100,7 @@
 
     <!-- ENERGY GAIN -->
     <div class="setting">
-      <p>How much energy does a frog gain when it eats a fly?</p>
+      <p>¿Cuánta energía ganará una rana al comerse una mosca?</p>
       <input type="range" min="1000" max="5000" value="2000" step="100" id="setting-energy-gain">
       <output for="setting-energy-gain" id="output-energy-gain">2000</output>
     </div>
@@ -108,7 +108,7 @@
 
     <!-- BEETLE COUNT -->
     <div class="setting" style="display: none;">
-      <p>About how many beetles should be in the pond?</p>
+      <p>¿Cuántos escarabajos debería haber en la laguna?</p>
       <input type="range" min="0" max="10" value="0" step="1" id="setting-max-beetles">
       <output for="setting-max-beetles" id="output-max-beetles">4</output>
     </div>
@@ -116,7 +116,7 @@
 
     <!-- BEETLE ENERGY GAIN -->
     <div class="setting" style="display: none;">
-      <p>How much energy does a frog gain when it eats a beetle?</p>
+      <p>¿Cuánta energía ganará una rana al comerse un escarabajo?</p>
       <input type="range" min="10000" max="50000" value="10000" step="500" id="setting-beetle-energy-gain">
       <output for="setting-energy-gain" id="output-beetle-energy-gain">10000</output>
     </div>
@@ -124,7 +124,7 @@
 
     <!-- METABOLISM -->
     <div class="setting" style="display: none;">
-      <p>Use metabolism (smaller frogs use energy slower than big frogs)</p>
+      <p>Usar metabolismo (las ranas pequeñas utilizan la energía más lentamente que las ranas grandes)</p>
       <input type="checkbox" checked="true" id="setting-metabolism"></input>
       <output for="setting-metabolism">✓</output>
     </div>
@@ -132,7 +132,7 @@
 
     <!-- MAX FROGS -->
     <div class="setting" style="display: none;">
-      <p>Maximum allowable frogs</p>
+      <p>Cantidad máxima permitida de ranas</p>
       <input type="range" min="100" max="1000" value="500" step="10" id="setting-max-frogs">
       <output for="setting-max-frogs" id="output-max-frogs">500</output>
     </div>
@@ -144,11 +144,11 @@
   <div class="chapter">
     <br>
     <div style="width: 380px; display: inline-block; margin: 0 20px 0 0;">
-      <b>Frog Count</b>
+      <b>Cantidad de ranas</b>
       <canvas class="plot" id="big-plot" width="380" height="250"></canvas>
     </div>
     <div style="width: 380px; display: inline-block; margin: 0 0 0 12px;">
-      <b>Frog Sizes</b>
+      <b>Tamaño de las ranas</b>
       <canvas class="plot" id="big-hist" width="380" height="250"></canvas>
     </div>
   </div>
@@ -159,11 +159,11 @@
     <div class="chapter" style="margin-top: 30px;">
       <h2>Share Board</h2>
       <p>
-      Here are some programs that your classmates have created. Click on a program image to try it for yourself.
+      Acá hay algunos programas que crearon sus compañeros. Clic en la imagen de un programa para probarlo por su cuenta.
       </p>
 
       <div id="shareboard-ajax">  
-      <div style="text-align: center;"><b>Loading...</b></div>
+      <div style="text-align: center;"><b>Cargando...</b></div>
       </div>
     </div>
   </div>
@@ -180,40 +180,40 @@
   </model>
   <workspace>
     <menu>
-      <block name="hop">
+      <block name="saltar">
         <param name="distance" type="range" min="1" max="4" step="0.2" default="1" />
       </block>
-      <block name="chirp" />
-      <block name="left">
-        <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="degrees" />
+      <block name="croar" />
+      <block name="izq">
+        <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="grados" />
       </block>
-      <block name="right">
-        <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="degrees" />
+      <block name="der">
+        <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="grados" />
       </block>
-      <block name="spin" />
-      <block name="hunt">
-        <param name="duration" type="range" min="1" max="10" step="1" default="7" random="true" label="seconds" unit="s" />
+      <block name="rotar" />
+      <block name="cazar">
+        <param name="duration" type="range" min="1" max="10" step="1" default="7" random="true" label="segundos" unit="s" />
       </block>
-      <block name="hatch" color="#b67196">
+      <block name="nacer" color="#b67196">
         <param name="variation">
-          <v>size-variation</v>
-          <v>no-variation</v>
+          <v>variación-tamaño</v>
+          <v>sin-variación</v>
         </param>
       </block>
-      <block name="die" color="#b67196" />
-      <block name="chance" type="if" instances="1">
+      <block name="morir" color="#b67196" />
+      <block name="probab" type="if" instances="1">
         <param name="probability" type="range" min="0" max="100" step="1" default="25" unit="%" />
       </block>
-      <block name="if" type="if" instances="2">
+      <block name="si" type="if" instances="2">
         <param name="condition">
-          <v>full?</v>
-          <v>hungry?</v>
-          <v>starving?</v>
-          <v>see-water?</v>
+          <v>satisfecho?</v>
+          <v>hambriento?</v>
+          <v>famélico?</v>
+          <v>ve-agua?</v>
         </param>
       </block>
     </menu>
-    <defaultProgram>hop(1);spin();</defaultProgram>
+    <defaultProgram>saltar(1);rotar();</defaultProgram>
   </workspace>
 </ntango>
 </script>
