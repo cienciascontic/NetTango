@@ -592,7 +592,7 @@ y.c=15
 y.Q=new L.iQ(this)
 y.z=new L.iR(this)
 x=H.t(this.x)
-if(J.a0(a,"size-variation")){w=U.mQ()*0.1
+if(J.a0(a,"variación-tamaño")){w=U.mQ()*0.1
 if(w>0.25)w=0.25
 if(w<-0.25)w=-0.25
 if(typeof x!=="number")return x.q()
