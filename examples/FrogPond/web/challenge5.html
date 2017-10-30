@@ -15,19 +15,18 @@
 <div class="content">
 
   <div class="chapter">
-    <h1>Challenge 5: Disruptive Selection!</h1>
+    <h1>Desafío 5: ¡Selección disruptiva!</h1>
     <p>
-    The last challenge is the hardest of all. This time we're going to try to simulate <u>disruptive selection</u> pressures.
-    That means we want to create a situation in which it's advantageous to be really small or really big, but disadvantageous
-    to be medium-sized. 
+    El último desafío es el más difícil de todos. Esta vez vamos a probar simular presiones <u>selectivas disruptivas</u>.
+    Esto significa que queremos crear una situación en donde sea ventajoso ser muy pequeño o muy grande, pero desventajoso ser de tamaño mediano. 
 
-    We've introduced Beetles. Beetles are extremely nutritious (and crunchy!) for frogs. The problem is that they're big and 
-    fast, which means that bigger frogs have a much better chance of catching the beetles. 
+    Hemos introducido escarabajos. Los escarabajos son muy nutritivos (¡y crocantes!) para las ranas. 
+      El problema es que son grandes y veloces, lo cual significa que las ranas grandes tienen mayor probabilidad de cazar los escarabajos.
+    Hemos introducido escarabajos. Los escarabajos son muy nutritivos (¡y crocantes!) para las ranasBeetles are extremely nutritious (and crunchy!) for frogs. The problem is that they're big and 
+    Tal vez se hayan dado cuenta de que las moscas tienden a revolotear alrededor del lirio sobre la parte izquierda de la laguna.
+      Hemos agregado otro pequeño nenúfar cerca de la flor de lirio.
 
-    You might have also noticed that the flies tend to swarm around the lily flower on the left side of the pond. We've added 
-    another small lily pad nearer to the flower.
-
-    <b>Hint:</b> Make the little flies have less energy. 
+    <b>Consejo:</b> Hagan que las moscas pequeñas tengan menos energía. 
 
     </p>
   </div>
@@ -64,7 +63,7 @@
 
     <!-- FLY COUNT -->
     <div class="setting">
-      <p>About how many flies should be in the pond?</p>
+      <p>¿Cuántas moscas habrá en la laguna?</p>
       <input type="range" min="0" max="60" value="30" step="1" id="setting-max-flies">
       <output for="setting-max-flies" id="output-max-flies">30</output>
     </div>
@@ -72,7 +71,7 @@
 
     <!-- ENERGY GAIN -->
     <div class="setting">
-      <p>How much energy does a frog gain when it eats a fly?</p>
+      <p>¿Cuánta energía ganará una rana al comerse una mosca?</p>
       <input type="range" min="1000" max="5000" value="2000" step="100" id="setting-energy-gain">
       <output for="setting-energy-gain" id="output-energy-gain">2000</output>
     </div>
@@ -80,7 +79,7 @@
 
     <!-- BEETLE COUNT -->
     <div class="setting">
-      <p>About how many beetles should be in the pond?</p>
+      <p>A¿Cuántos escarabajos debería haber en la laguna?</p>
       <input type="range" min="0" max="10" value="5" step="1" id="setting-max-beetles">
       <output for="setting-max-beetles" id="output-max-beetles">5</output>
     </div>
@@ -88,7 +87,7 @@
 
     <!-- BEETLE ENERGY GAIN -->
     <div class="setting">
-      <p>How much energy does a frog gain when it eats a beetle?</p>
+      <p>¿Cuánta energía ganará una rana al comerse un escarabajo?</p>
       <input type="range" min="10000" max="50000" value="20000" step="500" id="setting-beetle-energy-gain">
       <output for="setting-energy-gain" id="output-beetle-energy-gain">20000</output>
     </div>
@@ -96,7 +95,7 @@
 
     <!-- METABOLISM -->
     <div class="setting" style="display: none;">
-      <p>Use metabolism (smaller frogs use energy slower than big frogs)</p>
+      <p>Usar metabolismo (las ranas pequeñas consumen energía más lentamente que las ranas grandes)</p>
       <input type="checkbox" checked="true" id="setting-metabolism"></input>
       <output for="setting-metabolism">✓</output>
     </div>
@@ -126,40 +125,40 @@
   </model>
   <workspace>
     <menu>
-      <block name="hop">
+      <block name="saltar">
         <param name="distance" type="range" min="1" max="4" step="0.2" default="1" />
       </block>
-      <block name="chirp" />
-      <block name="left">
-        <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="degrees" />
+      <block name="croar" />
+      <block name="izq">
+        <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="grados" />
       </block>
-      <block name="right">
-        <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="degrees" />
+      <block name="der">
+        <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="grados" />
       </block>
-      <block name="spin" />
-      <block name="hunt">
-        <param name="duration" type="range" min="1" max="10" step="1" default="7" random="true" label="seconds" unit="s" />
+      <block name="rotar" />
+      <block name="cazar">
+        <param name="duration" type="range" min="1" max="10" step="1" default="7" random="true" label="segundos" unit="s" />
       </block>
-      <block name="hatch" color="#b67196">
+      <block name="nacer" color="#b67196">
         <param name="variation">
-          <v>size-variation</v>
-          <v>no-variation</v>
+          <v>variación-tamaño</v>
+          <v>sin-variación</v>
         </param>
       </block>
-      <block name="die" color="#b67196" />
-      <block name="chance" type="if" instances="1">
+      <block name="morir" color="#b67196" />
+      <block name="probab" type="if" instances="1">
         <param name="probability" type="range" min="0" max="100" step="1" default="25" unit="%" />
       </block>
-      <block name="if" type="if" instances="2">
+      <block name="si" type="if" instances="2">
         <param name="condition">
-          <v>full?</v>
-          <v>hungry?</v>
-          <v>starving?</v>
-          <v>see-water?</v>
+          <v>satisfecho?</v>
+          <v>hambriento?</v>
+          <v>famélico?</v>
+          <v>ve-agua?</v>
         </param>
       </block>
     </menu>
-    <defaultProgram>hop(1);spin();</defaultProgram>
+    <defaultProgram>saltar(1);rotar();</defaultProgram>
   </workspace>
 </ntango>
 </script>
