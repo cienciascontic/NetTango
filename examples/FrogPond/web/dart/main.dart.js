@@ -1418,7 +1418,7 @@ y.Z()
 H.a(y,"$isE",[H.b(z,0)],"$asE")
 this.dy.af("saltar",new L.iv())
 this.dy.af("croar",new L.iw())
-this.dy.af("izquierda",new L.iz())
+this.dy.af("izq",new L.iz())
 this.dy.af("derecha",new L.iA())
 this.dy.af("rotar",new L.iB())
 this.dy.af("cazar",new L.iC())
@@ -1467,7 +1467,7 @@ $2:[function(a,b){if(a instanceof L.am)a.hw(b)},null,null,4,0,null,1,2,"call"]},
 iw:{"^":"n:3;",
 $2:[function(a,b){if(a instanceof L.am)a.hs()},null,null,4,0,null,1,2,"call"]},
 iz:{"^":"n:3;",
-$2:[function(a,b){if(a instanceof L.am)a.dT("izquierda",b)},null,null,4,0,null,1,2,"call"]},
+$2:[function(a,b){if(a instanceof L.am)a.dT("izq",b)},null,null,4,0,null,1,2,"call"]},
 iA:{"^":"n:3;",
 $2:[function(a,b){if(a instanceof L.am)a.dT("derecha",b)},null,null,4,0,null,1,2,"call"]},
 iB:{"^":"n:3;",
