@@ -89,36 +89,36 @@
       </block>
       <block name="croar" />
       <block name="izquierda">
-        <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="degrees" />
+        <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="grados" />
       </block>
-      <block name="derecha">
-        <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="degrees" />
+      <block name="der">
+        <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="grados" />
       </block>
       <block name="rotar" />
       <block name="cazar">
         <param name="duration" type="range" min="1" max="10" step="1" default="7" random="true" label="seconds" unit="s" />
       </block>
-      <block name="hatch" color="#b67196">
+      <block name="nacer" color="#b67196">
         <param name="variation">
           <v>size-variation</v>
           <v>no-variation</v>
         </param>
       </block>
-      <block name="die" color="#b67196">
+      <block name="morir" color="#b67196">
         <param name="condition">
           <v>if starving</v>
           <v>always</v>
         </param>
       </block>
-      <block name="probabilidad" type="if" instances="1">
+      <block name="probab" type="if" instances="1">
         <param name="probability" type="range" min="0" max="100" step="1" default="25" unit="%" />
       </block>
       <block name="si" type="if" instances="2">
         <param name="condition">
-          <v>full?</v>
-          <v>hungry?</v>
-          <v>starving?</v>
-          <v>see-water?</v>
+          <v>satisfecho?</v>
+          <v>hambriento?</v>
+          <v>famélico?</v>
+          <v>ve-agua?</v>
         </param>
       </block>
     </menu>
