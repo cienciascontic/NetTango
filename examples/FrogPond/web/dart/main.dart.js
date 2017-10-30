@@ -777,7 +777,7 @@ $1:function(a){var z=this.a
 if(z.eC()){z.dy=0
 z.hu()}}},
 iK:{"^":"n:0;a",
-$0:function(){this.a.fr="die"
+$0:function(){this.a.fr="morir"
 return"die"}},
 iL:{"^":"n:1;a",
 $1:function(a){var z=this.a.z+=a
