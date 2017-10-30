@@ -3203,13 +3203,13 @@ x=this.x
 if(typeof x!=="number")return x.T()
 y=this.y
 if(typeof y!=="number")return y.T()
-C.a.M(z,"Too Many Frogs!",x/2,y/2-40)
+C.a.M(z,"¡Hay demasiadas ranas!",x/2,y/2-40)
 z.font="200 20px Nunito, sans-serif"
 y=this.x
 if(typeof y!=="number")return y.T()
 x=this.y
 if(typeof x!=="number")return x.T()
-C.a.M(z,"Press restart to try again",y/2,x/2+2)
+C.a.M(z,"Clic en reiniciar para probar de nuevo",y/2,x/2+2)
 if(this.gcz())this.b6(0)}},
 fN:function(a){var z,y,x,w,v
 a.save()
