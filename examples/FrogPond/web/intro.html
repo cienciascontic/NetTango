@@ -115,10 +115,10 @@
     OK. ¿Listos para algunos desafíos sobre evolución? 
     </p>
     <ul>
-      <li><a href="challenge1">Desafío 1</a>: ¡Explosión de la población!</li>
+      <li><a href="challenge1">Desafío 1 target="_blank"</a>: ¡Explosión de la población!</li>
       <li><a href="challenge2">Desafío 2</a>: Ranas pequeñas</li>
       <li><a href="challenge3">Desafío 3</a>: Ranas grandes</li>
-      <li><a href="challenge4">Desafo 4</a>: Estabilizando la selección</li>
+      <li><a href="challenge4">Desafío 4</a>: Estabilizando la selección</li>
       <li><a href="challenge5">Desafío 5</a>: ¡Selección disruptiva!</li>
     </ul>
   </div>
@@ -177,7 +177,7 @@
 
     <!-- METABOLISM -->
     <div class="setting" style="display: none;">
-      <p>Use metabolism (smaller frogs use energy slower than big frogs)</p>
+      <p>Usar metabolismo (las ranas pequeñas utilizan la energía más lentamente que las ranas grandes)</p>
       <input type="checkbox" checked="true" id="setting-metabolism"></input>
       <output for="setting-metabolism">✓</output>
     </div>
@@ -185,7 +185,7 @@
 
     <!-- MAX FROGS -->
     <div class="setting" style="display: none;">
-      <p>Maximum allowable frogs</p>
+      <p>Cantidad máxima permitida de ranas</p>
       <input type="range" min="100" max="1000" value="500" step="10" id="setting-max-frogs">
       <output for="setting-max-frogs" id="output-max-frogs">500</output>
     </div>
@@ -210,17 +210,17 @@
         <param name="distance" type="range" min="1" max="4" step="0.2" default="1" />
       </block>
       <block name="croar" />
-      <block name="izquierda">
+      <block name="izq">
         <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="grados" />
       </block>
-      <block name="derecha">
+      <block name="der">
         <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="grados" />
       </block>
       <block name="rotar" />
       <block name="cazar">
         <param name="duration" type="range" min="1" max="10" step="1" default="7" random="true" label="segundos" unit="s" />
       </block>
-      <block name="probabilidad" type="if" instances="1">
+      <block name="probab" type="if" instances="1">
         <param name="probability" type="range" min="0" max="100" step="1" default="25" unit="%" />
       </block>
       <block name="si" type="if" instances="1">
