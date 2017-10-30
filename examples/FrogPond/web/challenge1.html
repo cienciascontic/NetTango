@@ -201,10 +201,10 @@
   </model>
   <workspace>
     <menu>
-      <block name="salta">
+      <block name="saltar">
         <param name="distance" type="range" min="1" max="4" step="0.2" default="1" />
       </block>
-      <block name="croa" />
+      <block name="croar" />
      
       <block name="izq">
         <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="grados" />
@@ -212,17 +212,17 @@
       <block name="der">
         <param name="degrees" type="range" min="0" max="180" step="10" default="60" random="true" label="grados" />
       </block>
-      <block name="rota" />
+      <block name="rotar" />
       <block name="caza">
         <param name="duration" type="range" min="1" max="10" step="1" default="7" random="true" label="segundos" unit="s" />
       </block>
-      <block name="nace" color="#b67196">
+      <block name="nacer" color="#b67196">
         <param name="variation">
           <v>size-variation</v>
           <v>no-variation</v>
         </param>
       </block>
-      <block name="muere" color="#b67196" />
+      <block name="morir" color="#b67196" />
       <block name="probab" type="if" instances="1">
         <param name="probability" type="range" min="0" max="100" step="1" default="25" unit="%" />
       </block>
