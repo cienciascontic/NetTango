@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://litl.sesp.northwestern.edu/FrogPond/index.html?debug=true -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <title>Frog Pond Evolution</title>
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+  <meta name="format-detection" content="telephone=no">
+     
+  <link rel="stylesheet" href="./index_files/main.css">
+  <link rel="stylesheet" href="./index_files/pages.css">
+  <link rel="stylesheet" href="./index_files/toolbar.css">
+  <script src="./index_files/parse-1.2.18.min.js"></script>
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+<body>
+
+  <!-- INTRO PAGE 1 -->  
+  <div class="page" id="intro-page" style="z-index: 0; opacity: 0;">
+    <img src="./index_files/intro2.png" style="float: left;">
+    <div class="photo-credit">
+      Photo by Whylogwhy (flickr). Some rights reserved.
+    </div>
+    <div class="right-text">
+      <h1>Introduction</h1>
+      
+      Have you ever stopped to wonder why there are so many different kinds of
+      living things on earth?
+
+      In North America alone there are over 300 different kinds of amphibians,
+      900 different kinds of birds, and over 3,000 different kinds of spiders.
+      <br>
+      <br>
+
+      <b>Where does this <a>biodiversity</a> come from?</b>
+      <br>
+      <br>
+
+      When scientists look at fossils that lived millions of years ago, they
+      see that many living things looked much different than they do today.
+      How does this change happen?
+      <br>
+      <br>
+      In this unit we will explore these questions using a
+      computer model of frogs living in a pond habitat.
+    </div>
+    <button class="home-button"></button>
+    <button class="back-button">◄ BACK</button>
+    <button class="next-button">NEXT ►</button>
+  </div>
+  
+
+  
+  <!-- INTRO PAGE 2 -->
+  <div class="page" id="frog-overview" style="z-index: 0; opacity: 0;">
+    <img src="./index_files/intro1.png" style="float: left;">
+    <div class="photo-credit">
+      Photo by Anthony Masi (flickr). Some rights reserved.
+    </div>
+    <div class="right-text">
+      With the computer model you will create simple programs to
+      control the behavior of little blue frogs. The only difference between
+      frogs is their size. Some frogs grow up to be slightly bigger or smaller
+      than their parents ... just like humans.
+      <br>
+      <br>
+      <b>A frog's size affects some of the things it does.</b>
+      <br>
+      <br>
+      Bigger frogs hop farther:<br>
+      <img src="./index_files/frog-hop.png" width="300" style="margin: 5px 30px;">
+      <br>
+      <br>
+      Bigger frogs can see farther and have longer tongues:<br>
+      <img src="./index_files/frog-tongue.png" width="300" style="margin: 5px 30px;">
+      <br>
+      <b>OK. Ready to get started?</b> Click next to start working on your
+      first computer program.
+      
+    </div>
+    <button class="home-button"></button>
+    <button class="back-button">◄ BACK</button>
+    <button class="next-button">NEXT ►</button>
+  </div>
+  
+  
+  <!-- SIMULATION -->
+  <div class="page" id="sim-page" style="z-index: 0; opacity: 0;">
+    <canvas id="pond" width="1024" height="768"></canvas>
+    <canvas id="workspace" width="1024" height="768"></canvas>
+    <canvas id="flies" width="1024" height="768"></canvas>
+    <canvas id="mini-plot" width="140" height="100"></canvas>
+    
+    <div id="overlay">
+      <div id="plot-dialog" class="dialog">
+        <button class="close-button"></button>
+        Frog Sizes
+        <canvas id="plot" width="700" height="500"></canvas>
+      </div>
+    </div>       
+    <button class="home-button"></button>
+    <button class="mute-button" style="background-image: url(&quot;images/toolbar/volume.png&quot;);"></button>
+    <button class="toolbar" id="play-button" style="background-image: url(&quot;images/toolbar/play.png&quot;);"></button>
+    <button class="toolbar" id="fastforward-button"></button>
+    <button class="toolbar" id="restart-button"></button>
+    <button class="toolbar" id="plot-button"></button>
+  </div>
+  
+  
+  <div class="page" id="credits-page" style="z-index: 0; opacity: 0;">
+    <img src="./index_files/intro1.png" style="float: left;">
+    <div class="photo-credit">
+      Photo by Anthony Masi (flickr). Some rights reserved.
+    </div>
+    <div class="right-text" style="font-size: 16px;">
+      <h1>Credits</h1>
+      This app was produced at Northwestern University by the
+      Center for Connected Learning (CCL) and Computer-Based Modeling
+      (ccl.northwestern.edu) and the Tangible Interaction Design and
+      Learning (TIDAL) Lab (tidal.northwestern.edu). The code is based
+      on NetTango and NetLogo (ccl.northwestern.edu/netlogo).
+      <br>
+      <br>
+      <b>Software:</b> Michael Horn, Corey Brady, Arthur Hjorth, 
+      Amartya Banerjee, and Uri Wilensky.
+      <br>
+      <br>
+      <b>Model Design:</b> Michael Horn, Amartya Banerjee, Corey Brady,
+      Arthur Hjorth, Aditi Wagh, and Uri Wilensky.
+      <br>
+      <br>
+      <b>Graphic Design:</b> Michael Horn
+      <br>
+      <br>
+      <b>Title Page Photo:</b> tom_harding (flickr). Some rights reserved.
+      <br>
+      <br>
+      Copyright © 2014 Uri Wilensky and Michael Horn. All rights reserved.
+      <br>
+      <br>
+      <img id="logos" src="./index_files/logos.png" style="margin-left: 90px; width: 250px; opacity: 0.86;">
+      <br>
+      This work was supported by the National Science Foundation under
+      grant DRL-1109834. Any opinions or recommendations are those of
+      the authors and not necessarily the views of the NSF.
+      
+    </div>
+    <button class="home-button"></button>
+  </div>
+
+  
+  <!-- LOG DUMP PAGE -->  
+  <div class="page" id="log-page" style="z-index: 0; opacity: 0;">
+    <div style="padding: 50px; color: black;">
+    <h2 id="log-id">Hello There</h2>
+    <pre id="log-dump" style="width: 800px; height: 400px; margin: 0px; background-color: white;"></pre><br>
+    <button id="log-upload" style="width: 80px; height: 35px; margin: 10px 10px 10px 0px;">Upload</button>
+    <button id="log-erase" style="width: 80px; height: 35px; margin: 10px 0px;">Erase</button>
+    </div>
+    <button class="home-button"></button>
+  </div>
+    
+
+  <!-- SPLASH PAGE -->
+  <div class="page" id="splash-page" style="z-index: 1; opacity: 1;">
+    <div id="version-stamp">version 0.4 [559255]</div>
+    <button class="main-menu" id="intro-button" style="opacity: 1;">Introduction</button>
+    <button class="main-menu" id="experiment-button" style="opacity: 1;">Experiment</button>
+    <button class="main-menu" id="credits-button" style="opacity: 1;">Credits</button>
+  </div>
+
+  
+  <script src="./index_files/main.dart.js"></script>
+  <!--
+  <script type="text/javascript" src="phonegap.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  -->
+  
+  <script type="text/javascript">
+    //app.initialize();
+    
+    Parse.initialize("Vph488fVBhnp7CJVkSzwPvuTy27kD7eHLTRh9rRM",
+                     "Lxp9aBeaGzXIFJtBkDsFCsEOPXO5MMYzHvBpChz2");
+
+    document.ontouchmove = function(event) {
+      evt.preventDefault();
+    };
+    
+    window.oncontextmenu = function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      return false;
+    };
+    
+    window.addEventListener("message", receiveMessage, false);
+
+    function sendMessage(message) {
+      var origin = window.location.protocol + "//" + window.location.host;
+      window.postMessage(message, origin);
+    }
+    
+    function receiveMessage(event) {
+      if (event.data.lastIndexOf("upload-logs", 0) === 0) {
+        uploadLogs();
+      }
+    }
+
+    
+    function uploadLogs() {
+      
+      /*
+      var AppLogs = Parse.Object.extend("AppLogs");
+      var appLogs = new AppLogs();
+      
+      appLogs.set("appID", localStorage["log-id"]);
+      appLogs.set("data", localStorage["log-data"]);
+      appLogs.save(null, {
+        success: function(appLogs) {
+          sendMessage("upload-success: Logs saved on server.");
+        },
+        error: function(appLogs, error) {
+          sendMessage("upload-error: " + error.description);
+        }
+      });
+      */
+    }
+  </script>
+  
+
+</body></html>
