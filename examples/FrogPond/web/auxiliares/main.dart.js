@@ -1275,7 +1275,7 @@ $1:function(a){var z,y
 z=this.c
 y=z.NO
 if(y.rZ()){y.Wk=0
-z.A9("hunt",null)}}},
+z.A9("cazar",null)}}},
 hz:{
 "^":"Tp:13;a,b,c",
 $0:function(){var z=this.b+" "+H.d(this.c)
