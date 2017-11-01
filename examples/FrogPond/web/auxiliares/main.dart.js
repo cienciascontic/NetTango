@@ -159,7 +159,7 @@ U.DQ("chimes")
 U.DQ("croak")
 U.DQ("crunch")
 U.DQ("sing")
-U.DQ("chirp")
+U.DQ("croar")
 U.DQ("click")
 U.DQ("splash")
 U.DQ("tick")
@@ -2087,8 +2087,8 @@ z.al=this
 z.Mk=18
 this.eX=z
 this.Y5(z)},
-static:{Ll:function(a){var z=new U.Gn(null,null,null,null,null,a,null,0,0,0,0,null,null,"if-else","hop","#3399aa","white",!1,null,null,null,null,null,null,!1,!1)
-z.X7(a,"if-else")
+static:{Ll:function(a){var z=new U.Gn(null,null,null,null,null,a,null,0,0,0,0,null,null,"si-entonces","hop","#3399aa","white",!1,null,null,null,null,null,null,!1,!1)
+z.X7(a,"si-entonces")
 z.ih="#c92"
 z.al=null
 z.al=z
