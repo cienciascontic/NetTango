@@ -159,7 +159,7 @@ U.DQ("chimes")
 U.DQ("croak")
 U.DQ("crunch")
 U.DQ("sing")
-U.DQ("croar")
+U.DQ("chirp")
 U.DQ("click")
 U.DQ("splash")
 U.DQ("tick")
@@ -456,7 +456,7 @@ v=new U.Uo(x,null,null,null,w,1)
 x.xx=!0
 w.Qq.push(v)
 y.push(v)
-z=U.cZ(this,"left")
+z=U.cZ(this,"izquier")
 v=U.SW(z)
 z.ZO=v
 v.UQ=["random",30,60,90,120,150,180]
@@ -1029,7 +1029,7 @@ z.Jz(-(G.v3.prototype.gjn.call(z)*0.75*4))
 return v!=null}else return!1},
 WK:function(a,b){this.NO.CH(0)
 if(a==="saltar")this.xh(a,b)
-else if(a==="turn"||a==="left"||a==="right")this.Pr(a,b)
+else if(a==="turn"||a==="izquier"||a==="derecha")this.Pr(a,b)
 else if(a==="croar")this.xA(a,b)
 else if(a==="rotar")this.vi(a,b)
 else if(a==="eat")this.A9(a,b)
@@ -1066,8 +1066,8 @@ Pr:function(a,b){var z,y,x,w
 z={}
 if(J.de(b,"random")){y=$.tg().j1(90)
 if(a==="right")y*=-1}else if(typeof b==="number")y=a==="right"?b*-1:b
-else if(a==="right")y=$.tg().j1(90)*-1
-else y=a==="left"?$.tg().j1(90):$.tg().j1(180)-90
+else if(a==="derecha")y=$.tg().j1(90)*-1
+else y=a==="izquier"?$.tg().j1(90):$.tg().j1(180)-90
 x=this.NO
 z.a=a
 if(b!=null)z.a=a+" "+H.d(b)
@@ -2087,8 +2087,8 @@ z.al=this
 z.Mk=18
 this.eX=z
 this.Y5(z)},
-static:{Ll:function(a){var z=new U.Gn(null,null,null,null,null,a,null,0,0,0,0,null,null,"si-entonces","hop","#3399aa","white",!1,null,null,null,null,null,null,!1,!1)
-z.X7(a,"si-entonces")
+static:{Ll:function(a){var z=new U.Gn(null,null,null,null,null,a,null,0,0,0,0,null,null,"si-sino","hop","#3399aa","white",!1,null,null,null,null,null,null,!1,!1)
+z.X7(a,"si-sino")
 z.ih="#c92"
 z.al=null
 z.al=z
