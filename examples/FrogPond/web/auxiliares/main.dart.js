@@ -426,7 +426,7 @@ RY:{
 "^":"qv;Sh,Ol,R,fg,ZC,M,KJ,Ee,Qq,kC,iA,Sq,xQ",
 MF:function(){this.Sh.kK()},
 iR:function(){var z,y
-z=U.cZ(this,"hop")
+z=U.cZ(this,"saltar")
 y=U.SW(z)
 z.ZO=y
 y.UQ=[1,2,3,4,5]
@@ -437,7 +437,7 @@ this.BG(z)
 this.VB(z)
 z.eh=!0},
 kG:function(a){var z,y,x,w,v
-z=U.cZ(this,"hop")
+z=U.cZ(this,"saltar")
 y=U.SW(z)
 z.ZO=y
 y.UQ=[1,2,3,4,5]
@@ -449,7 +449,7 @@ z.xx=!0
 y.Qq.push(w)
 x.push(w)
 w=this.ZC
-x=U.cZ(this,"chirp")
+x=U.cZ(this,"croar")
 y=w.hH
 w=w.Df
 v=new U.Uo(x,null,null,null,w,1)
@@ -479,7 +479,7 @@ z.xx=!0
 w.Qq.push(v)
 y.push(v)
 v=this.ZC
-y=U.cZ(this,"spin")
+y=U.cZ(this,"rotar")
 w=v.hH
 v=v.Df
 x=new U.Uo(y,null,null,null,v,1)
@@ -494,7 +494,7 @@ y=new U.Uo(w,null,null,null,x,1)
 w.xx=!0
 x.Qq.push(y)
 v.push(y)
-z=U.cZ(this,"hatch")
+z=U.cZ(this,"nacer")
 z.ih="#b67196"
 y=U.SW(z)
 z.ZO=y
@@ -506,7 +506,7 @@ x=new U.Uo(z,null,null,null,y,1)
 z.xx=!0
 y.Qq.push(x)
 v.push(x)
-z=U.cZ(this,"die")
+z=U.cZ(this,"morir")
 z.ih="#b67196"
 x=this.ZC
 v=x.hH
@@ -1028,15 +1028,15 @@ v=z.Sh.lO.X4(z)
 z.Jz(-(G.v3.prototype.gjn.call(z)*0.75*4))
 return v!=null}else return!1},
 WK:function(a,b){this.NO.CH(0)
-if(a==="hop")this.xh(a,b)
+if(a==="saltar")this.xh(a,b)
 else if(a==="turn"||a==="left"||a==="right")this.Pr(a,b)
-else if(a==="chirp")this.xA(a,b)
-else if(a==="spin")this.vi(a,b)
+else if(a==="croar")this.xA(a,b)
+else if(a==="rotar")this.vi(a,b)
 else if(a==="eat")this.A9(a,b)
-else if(a==="hatch")this.Db(a,b)
-else if(a==="die")this.qk(a,b)
+else if(a==="nacer")this.Db(a,b)
+else if(a==="morir")this.qk(a,b)
 else if(a==="cazar")this.n8(a,b)
-else if(C.xB.nC(a,"if"))this.Ce(a,b)
+else if(C.xB.nC(a,"si"))this.Ce(a,b)
 else if(C.xB.nC(a,"repeat"))this.tC(a,b)},
 U1:function(){var z=this.NO
 if(z.Sh.HH.dI(z.x,z.y)==null){U.yU("splash")
