@@ -1035,7 +1035,7 @@ else if(a==="spin")this.vi(a,b)
 else if(a==="eat")this.A9(a,b)
 else if(a==="hatch")this.Db(a,b)
 else if(a==="die")this.qk(a,b)
-else if(a==="hunt")this.n8(a,b)
+else if(a==="cazar")this.n8(a,b)
 else if(C.xB.nC(a,"if"))this.Ce(a,b)
 else if(C.xB.nC(a,"repeat"))this.tC(a,b)},
 U1:function(){var z=this.NO
