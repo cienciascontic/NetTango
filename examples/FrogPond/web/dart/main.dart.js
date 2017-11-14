@@ -3162,14 +3162,14 @@ C.a.M(z,H.o(y),u+15,s-118)}z.textAlign="left"
 z.font="200 13px Nunito, sans-serif"
 z.fillStyle="#39a"
 y=u+15
-C.a.M(z,"size: "+J.ed(this.x1.x,1),y,s-93)
+C.a.M(z,"tamaño: "+J.ed(this.x1.x,1),y,s-93)
 w=this.x1
 t=w.fy
 w=J.d7(w.cy.ch.h(0,"energy-gain"),0.2)
 if(typeof t!=="number")return t.ac()
 if(C.b.ac(t,w))z.fillStyle="red"
 w=this.x1
-C.a.M(z,"energy: "+(C.t.em(C.b.T(P.ad(w.fy,0),w.cy.ch.h(0,"energy-gain"))*100,1)+"%"),y,s-78)}else if(v!=null&&!v.Q){y=v.f
+C.a.M(z,"energía: "+(C.t.em(C.b.T(P.ad(w.fy,0),w.cy.ch.h(0,"energy-gain"))*100,1)+"%"),y,s-78)}else if(v!=null&&!v.Q){y=v.f
 w=this.fx
 if(typeof y!=="number")return y.n()
 u=H.t(C.b.n(y,w)+this.fy)
