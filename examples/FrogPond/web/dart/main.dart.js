@@ -868,7 +868,7 @@ if(t===0)return
 r=0.7/z
 w=this.Q
 w.fillStyle=this.ch
-w.font="200 12px sans-serif"
+w.font="200 10px sans-serif"
 w.textAlign="center"
 w.textBaseline="bottom"
 for(w=s-x*2,v=s/2,q=0;q<z;++q){p=this.x
