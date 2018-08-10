@@ -1,0 +1,1 @@
+Para que funciones lagunadlr.html hay que agregar al final de la URL "?debug=true"
