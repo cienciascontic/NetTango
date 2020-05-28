@@ -1,0 +1,125 @@
+/* <style> */
+
+
+  body {
+    /* font-family: Nunito, 'Helvetica Neue', sans-serif; */
+    background-color: #FCD784;
+/* font-family: 'Rancho', cursive; */
+/* font-family: Poppins, sans-serif; */
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 125%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contenedor {
+background-color: white;
+    display: grid;
+    grid-template-rows: 169px 420px 70px 600px 70px;
+    margin: 20px;
+  border-radius: 15px;
+  }
+
+  .imagen_centrada {
+    text-align: center;
+
+  }
+
+.banner-ORI {
+  background-color: rgba(139,151,253,100);
+  text-align: center;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  font-family: 'Rancho', cursive;
+  color: rgb(245,244,233,100);
+  /* margin: 40px; */
+  /* display: inline-block; */
+}
+.banner {
+  background-color: rgb(139,151,253);
+  width: 100%;
+  height: 170px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+   box-shadow: 0px 5px 10px grey;
+
+  /* background: linear-gradient(#467, #134); */
+  /* background: linear-gradient(rgb(50, 80, 30), rgb(30, 60, 60)); */
+  /* background: linear-gradient(rgb(139,151,253), #2E2E2E);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8); */
+}
+.titular-ORI {
+  font-size: 58px;
+}
+.titular {
+font-family: 'Patrick Hand', cursive;
+  font-size: 70px;
+  line-height: 100px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.subtitular-ORI {
+
+  font-size: 28px;
+}
+.subtitular {
+font-family: Nunito, 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 300;
+  color: white;
+}
+.introduccion-ORI {
+    background-color: rgb(252,215,132,100);
+}
+.introduccion {
+  background-color: rgb(252,215,132,100);
+  width: 800px;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 140%;
+  margin: 30px auto;
+}
+.primerparrafo {
+  background-color: rgb(129,217,221,100);
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  color: rgb(42,13,94,100);
+  text-align: center;
+}
+
+.sandbox {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  /* overflow:scroll; */
+  /* overflow-y: scroll; */
+}
+
+.boton {
+  border: none;
+  color: green;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+.final {
+background-color: rgba(139,151,253,100);
+font-family: Poppins, sans-serif;
+font-size: 18px;
+color: rgb(245,244,233,100);
+text-align: center;
+/* border-radius: 15px; */
+}

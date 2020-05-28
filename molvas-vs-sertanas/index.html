@@ -1,407 +1,125 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Ejemplo NetTango</title>
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <script src="https://use.fontawesome.com/fd543cd882.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <link href="ntango.css" rel="stylesheet">
-  <link href="master.css" rel="stylesheet">
-  <script src="ntango.js"></script>
-</head>
-<body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Especies exóticas y autóctonas</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">   -->
+    <link rel="stylesheet" href="hojadeestilos.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Patrick+Hand&family=Poppins:wght@100;200;600&family=Rancho&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- <div class="contenedor"> -->
 
-  <div class="contenedor">
-      <div class="titulo-ppal">
-        <h2>Ecología y pensamiento computacional</h2>
-        <h3>Sertanas vs. Molvas</h3>
-
-        <div class="overlay" id="recompile-overlay">
-          <button id="recompile-button" onclick="recompile()">Recompilar</button>
-        </div>
+      <div class="banner">
+        <div class="titular">Molvas vs. Sertanas</div>
+        <div class="subtitular">Ecología de especies exóticas y autóctonas</div>
       </div>
 
-      <div class="modelo-netlogo">
-          <iframe id="netlogo" frameborder="0" height="430" scrolling="yes" width="100%" src="Sertanas-vs-Molvas-ntango-v2.html">
-          </iframe>
+      <div class="introduccion">
+        <h2>Introducción</h2>
+        <p>Las <b>sertanas</b> son una especie autóctona y las <b>molvas</b> una especie exótica. Las sertanas siempre estuvieron por acá, hasta que vinieron las molvas a complicarles la vida. Tanto las sertanas como las molvas se mueven, comen, se reproducen, y mueren. </p>
+        <p>Las <b>molvas</b> se mueven más rápido que las <b>sertanas</b> pero también gastan más energía al moverse, aprovechan mejor los nutrientes que las sertanas (por lo tanto ganan más energía cuando comen pasto) y además tienen la capacidad de comer yuyos, no como las sertanas que solo comen pasto.</p>
+        <!-- <div class="imagen_centrada"> -->
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Wild_rabbit.jpg/800px-Wild_rabbit.jpg" alt="" width=90%>
+            <figcaption style="font-size:14px;"><b>Imagen:</b> Conejo europeo en Australia: una de las mayores plagas del país. <br><b>Fuente:</b> Wikipedia. De Fir0002 - Trabajo propio, GFDL 1.2, <a href="https://commons.wikimedia.org/w/index.php?curid=194918/">https://commons.wikimedia.org/w/index.php?curid=194918/</a> </figcaption>
+          </figure>
+        <!-- </div> -->
+
+
+        <!-- <p>Las sertanas pueden enfermarse a través del virus S1 (que no afecta a las molvas). Las sertanas enfermas se mueven más lentamente y no tienen tanto apetito. Pueden tardar hasta un año en recuperarse (aprox. 90 ticks) y luego se vuelven inmunes.<br>
+
+        NOTA: 10 años son aproximadamente 900 ticks</p>
+        <p> -->
+          <h2>El problema de las especies exóticas</h2>
+          Las especies exóticas como el <b>conejo europeo</b> en Australia, o la <b>rana toro y el jabalí</b> en América del Sur, son un gran problema en muchos lugares del mundo, amenazando a la biodiversidad al desplazar a las especies autóctonas.<br><br>
+
+          Este movimiento de especies se da desde hace mucho tiempo, y es considerado uno de los factores más importantes del <b>cambio global</b> (Informe UNESCO sobre especies exóticas).
+          Este problema se da no solamente en las especies animales, también en las vegetales con arbustos, hongos, pastizales y otras especies.<br><br>
+
+          Este fenómeno es producido a veces por el turismo, otras veces por acciones directas del hombre en la modificación del entorno natural y por otras razones bien variadas.
+          Es habitual, incluso, que en los lugares donde se da este fenómeno, se conformen grupos especializados para erradicar estas especies exóticas e invasoras.<br><br>
+
+          Como verán, es un fenómeno que interesa mucho estudiar ya que tiene un impacto directo en el <b>entorno natural</b>. Ahora bien, ¿Cómo podríamos hacer para comprender mejor esta dinámica de interacción entre especies exóticas y especies autóctonas? ¿Qué pasaría si pudiéramos programar las acciones de molvas y sertanas para comprender mejor sus interacciones?<br>
+
+        </p>
+
+                  <h2>Programando molvas y sertanas</h2>
+                  <p>
+                    <i>Molvas vs sertanas</i> es un entorno de programación simple y a la vez potente, que permite programar "agentes" (molvas y sertanas) y sus interacciones con el entorno (el pasto y los yuyos).<br><br>
+
+                    <i>Molvas vs sertanas</i> está construido con <b>NetTango</b> (Horn, 2014), que a su vez permite la modelización con NetLogo (Wilensky, 1998).
+
+                    <figure>
+                      <img src="./img/captura-programacion-molvas-sertanas.jpg" alt="" width=90%>
+                      <figcaption style="font-size:14px;"><b>Imagen:</b> Captura de pantalla programación NetTango de molvas y sertanas</figcaption>
+                    </figure>
+
+                    Técnicamente es lo que se conoce como un <i>code-first learning environment</i> (Horn et. al, 2014), es decir, un entorno de programación donde se aprende a programar en menos de cinco minutos.<br>
+
+                    Para comenzar a programar las molvas y las sertanas, lo primero que deben hacer es ubicar (como pueden ver en la figura), primero que nada, el bloque <b>"acciones sertana"</b> o <b>"acciones molva"</b> y recién allí debajo colocar los demás bloques para darle vida a estas especies imaginarias.<br><br>
+
+                    Den clic en el botón de aquí abajo para comenzar a programar.<br><br>
+
+                    <div class="" style="text-align: center;">
+                      <a href="index2.html"><img src="./img/boton-ir-al-entorno.png" alt="" style="cursor:pointer"></a>
+
+                    </div>
+
+
+
+                  </p>
+
+        <p>
+
+          <!-- <h2>¿Cómo citar este modelo?</h2>
+
+          Si mencionan este modelo o el software NetLogo en una publicación, por favor incluyan la cita de acá abajo.
+
+          Para el modelo solo:
+
+          * Monzón, F.; Rizzi Iribarren, C. (2020). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+          Citar el software NetLogo de esta manera:
+
+          * Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+
+          ## COPYRIGHT Y LICENCIAS
+
+          Copyright 2020 Cristián Rizzi Iribarren y Florencia Monzón.
+
+          ![CC BY-NC-SA 3.0](http://ccl.northwestern.edu/images/creativecommons/byncsa.png)
+
+          Este trabajo está bajo la licencia Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License.  Para ver una copia de esta licencia, visitar https://creativecommons.org/licenses/by-nc-sa/3.0/ o enviar una carta a Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+          También hay licencias comerciales disponibles. Para saber más sobre licencias comerciales, por favor contactar a Uri Wilensky en uri@northwestern.edu.
+
+          Este modelo fue creado como parte del trabajo:
+          SECUENCIAS DIDÁCTICAS ED CIENCIAS, GERENCIA OPERATIVA DE CURRICULUM Y ENLACE CIENCIAS, MINISTERIO DE EDUCACIÓN DEL GOBIERNO DE LA CIUDAD AUTÓNOMA DE BUENOS AIRES.
+
+          Este modelo está basado en el modelo Rabbits-Grass-Weeds de Uri Wilensky, 1997, el cual, a su vez fue desarrollado en el marco del siguiente proyecto:
+
+          PARTICIPATORY SIMULATIONS: NETWORK-BASED DESIGN FOR SYSTEMS LEARNING IN CLASSROOMS and/or INTEGRATED SIMULATION AND MODELING ENVIRONMENT. The project gratefully acknowledges the support of the National Science Foundation (REPP & ROLE programs) -grant numbers REC #9814682 and REC-0126227.
+
+          * Wilensky, U. (2001).  NetLogo Rabbits Grass Weeds model.  http://ccl.northwestern.edu/netlogo/models/RabbitsGrassWeeds.  Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL. -->
+
+        </p>
+
       </div>
 
-      <div class="titulo-codigo-nettango">
-        <h3>Código NetTango</h3>
+      <div class="primerparrafo">
+
       </div>
 
-<div class="canvas-codigo-nettango">
-  <div id="nt-container">
-    <canvas id="nt-codigo-sertana"  class="nt-canvas" width="470" height="560" style="background: #fef9f6; border: dashed 2px rgb(129,217,221,100);"></canvas>
-      <i class="fa fa-trash fa-2x trashcan"></i>
-  </div>
+      <div class="sandbox">
 
-<!-- acá va el otro containerish -->
-  <div id="nt-container">
-    <canvas id="nt-codigo-molva" class="nt-canvas"  width="470" height="560" style="background: #fef9f6; border: dashed 2px rgb(129,217,221,100);"></canvas>
-      <i class="fa fa-trash fa-2x trashcan"></i>
-  </div>
-<!-- fin del otro containerish -->
-</div>
+      </div>
 
-<div class="fin">
-  <h3 id="netlogo-code-link">Código NetLogo <i class="fa fa-caret-down"></i></h3>
-</div>
+      <div class="final">
 
-<pre id="netlogo-code">
-</pre>
+      </div>
 
-  <script src="ntango.js"></script>
+    <!-- </div> -->
 
-  <script>
-
-  // -------------------------------------------------------------
-  // actualizar código de NetLogo y recompilar
-  // -------------------------------------------------------------
-  function recompile() {
-    var nl = document.getElementById("netlogo").contentWindow;
-    nl.session.widgetController.setCode(buildCode());
-    nl.session.recompile();
-    document.getElementById("recompile-overlay").style.display = "none";
-  }
-
-  // -------------------------------------------------------------
-  // fusionar código existente de NetLogo y el actual de NetTango
-  // -------------------------------------------------------------
-  function buildCode() {
-    var nl = document.getElementById("netlogo").contentWindow;
-
-    var nlcode = nl.session.widgetController.code();
-    var ntcode = "; --- NETTANGO BEGIN ---";
-    ntcode += "\n\n" + NetTango.exportCode("nt-codigo-sertana", "NetLogo");
-    ntcode += "\n\n" + NetTango.exportCode("nt-codigo-molva", "NetLogo");
-    ntcode += "\n\n; --- NETTANGO END ---";
-
-    // fusionar NetTango y NetLogo
-    var merged = nlcode;
-    if (nlcode.indexOf("; --- NETTANGO BEGIN ---") >= 0) {
-      merged = nlcode.replace(new RegExp("((?:^|\n); --- NETTANGO BEGIN ---\n)([^]*)(\n; --- NETTANGO END ---)"), "\n" + ntcode + "\n");
-    } else {
-      merged = nlcode + "\n\n" + ntcode;
-    }
-
-    return merged;
-  }
-
-
-  // -------------------------------------------------------------
-  // inicializar workspaces de NetTango
-  // -------------------------------------------------------------
-  document.body.onload = function() {
-    console.log("hello");
-    NetTango.init("nt-codigo-sertana", sertanaDefinition);
-    NetTango.init("nt-codigo-molva", molvaDefinition);
-
-    NetTango.onProgramChanged("nt-codigo-sertana", function(canvasId) {
-      document.getElementById("recompile-overlay").style.display = "block";
-      document.getElementById("netlogo-code").innerHTML = buildCode();
-    });
-
-    NetTango.onProgramChanged("nt-codigo-molva", function(canvasId) {
-      document.getElementById("recompile-overlay").style.display = "block";
-      document.getElementById("netlogo-code").innerHTML = buildCode();
-    });
-
-
-
-  // -------------------------------------------------------------
-  // mostrar / ocultar código netlogo
-  // -------------------------------------------------------------
-    $("#netlogo-code").hide();
-    $("#netlogo-code-link").click(function () {
-      $("#netlogo-code").toggle();
-      $("#netlogo-code-link i").toggleClass("fa-caret-up");
-      $("#netlogo-code-link i").toggleClass("fa-caret-down");
-    });
-
-  }
-
-
-  // -------------------------------------------------------------
-  // Definiciones bloques de NetTango
-  // -------------------------------------------------------------
-  var sertanaDefinition = {
-    "blocks" : [
-      {
-        "action" : "acciones sertana ",
-        "type" : "nlogo:procedure",
-        "start" : true,
-        "limit" : 1,
-        "format" : "to acciones-sertana",
-        "blockColor" : "#b55",
-        "required" : true
-      },
-
-      {
-        "action" : "camina",
-        "format" : "forward {0} set energía energía - (0.5 * {0})",
-        "params" : [
-          {
-            "type" : "range",
-            "min" : 0,
-            "max" : 3,
-            "step" : 0.1,
-            "default" : 1,
-            "name" : "pasos"
-          }
-        ]
-      },
-
-      {
-        "action" : "izquierda",
-        "format" : "left random {0}",
-        "params" : [
-          {
-            "type" : "range",
-            "min" : 0,
-            "max" : 90,
-            "step" : 1,
-            "default" : 50,
-            "random" : true,
-            "name" : "cantidad",
-            "unit" : "\u00B0"
-          }
-        ]
-      },
-
-      {
-        "action" : "derecha",
-        "format" : "right random {0}",
-        "params" : [
-          {
-            "type" : "range",
-            "min" : 0,
-            "max" : 90,
-            "step" : 1,
-            "default" : 50,
-            "random" : true,
-            "name" : "cantidad",
-            "unit" : "\u00B0"
-          }
-        ]
-      },
-
-      //  {
-      //   "action" : "sertana ve pasto ",
-      //   "type" : "nlogo:procedure",
-      //   "start" : true,
-      //   "limit" : 1,
-      //   "format" : "to sertana-encuentra-pasto",
-      //   "blockColor" : "#ee7f0f",
-      //   "required" : true
-      // },
-
-      {
-       "action" : "come pasto ",
-       "format" : "if energía > 0 AND pcolor = green [set pcolor brown set energía energía + 5]",
-       // si come pasto gana 5 unidades de energía, menos que la molva
-       "blockColor" : "#83be4e",
-       "required" : true
-     },
-
-     {
-       "action" : "si desnutrida",
-       "format" : "if energía <= 0",
-       "blockColor" : "#89a",
-       "clauses" : [ ]
-     },
-
-     {
-       "action" : "si saludable",
-       "format" : "if energía > 15",
-       // necesitan un poco más de energía que las molvas para quedar saludables
-       "blockColor" : "#89a",
-       "clauses" : [ ]
-     },
-
-      {
-        "action" : "nacer",
-        "format" : "set energía (energía / 2) hatch 1 [ rt random-float 360 fd 1 ]",
-        "blockColor" : "#916da0"
-      },
-
-      {
-        "action" : "morir",
-          "format" : "die",
-        "blockColor" : "#916da0",
-      },
-
-
-      {
-        "action" : "probabilidad",
-        "blockColor" : "#89a",
-        "format" : "if random 100 < {0}",
-        "clauses" : [ ],
-        "params" : [
-          {
-            "type" : "range",
-            "min" : 0,
-            "max" : 100,
-            "step" : 0.5,
-            "default" : 20,
-            "unit" : "%",
-            "name" : "porcentaje"
-          }
-        ]
-      }
-    ]
-  };
-
-  var molvaDefinition = {
-    "blocks" : [
-
-      {
-        "action" : "acciones molva ",
-        "type" : "nlogo:procedure",
-        "start" : true,
-        "limit" : 1,
-        "format" : "to acciones-molva",
-        "blockColor" : "#b55",
-        "required" : true
-      },
-
-      {
-        "action" : "camina",
-        "format" : "forward {0} set energía energía - (0.5 * {0})",
-        "params" : [
-          {
-            "type" : "range",
-            "min" : 0,
-            "max" : 3,
-            "step" : 0.1,
-            "default" : 1,
-            "name" : "pasos"
-          }
-        ]
-      },
-
-       {
-         "action" : "izquierda",
-         "format" : "left random {0}",
-         "params" : [
-           {
-             "type" : "range",
-             "min" : 0,
-             "max" : 90,
-             "step" : 1,
-             "default" : 50,
-             "random" : true,
-             "name" : "cantidad",
-             "unit" : "\u00B0"
-           }
-         ]
-       },
-
-
-       {
-         "action" : "derecha",
-         "format" : "right random {0}",
-         "params" : [
-           {
-             "type" : "range",
-             "min" : 0,
-             "max" : 90,
-             "step" : 1,
-             "default" : 50,
-             "random" : true,
-             "name" : "cantidad",
-             "unit" : "\u00B0"
-           }
-         ]
-       },
-
-
-     //  {
-     //   "action" : "molva ve pasto ",
-     //   "type" : "nlogo:procedure",
-     //   "start" : true,
-     //   "limit" : 1,
-     //   "format" : "to molva-encuentra-pasto",
-     //   "blockColor" : "#ee7f0f",
-     //   "required" : true
-     // },
-
-     {
-      "action" : "come pasto ",
-       "format" : "if energía > 0 AND pcolor = green [set pcolor brown set energía energía + 6]",
-      // si come pasto gana 6 unidades de energía (aprovecha más los nutrientes)
-      "blockColor" : "#83be4e",
-      "required" : true
-    },
-
-    //  {
-    //   "action" : "molva ve yuyos ",
-    //   "type" : "nlogo:procedure",
-    //   "start" : true,
-    //   "limit" : 1,
-    //   "format" : "to molva-encuentra-yuyos",
-    //   "blockColor" : "#9720db",
-    //   "required" : true
-    // },
-
-    {
-     "action" : "come yuyos ",
-     "format" : "if energía > 0 AND pcolor = violet [set pcolor brown set energía energía + 3]",
-     // si come pasto gana 3 unidades de energía (la mitad que el pasto)
-     "blockColor" : "#a82edf",
-     "required" : true
-   },
-
-    {
-      "action" : "si desnutrida",
-      "format" : "if energía <= 0",
-      "blockColor" : "#89a",
-      "clauses" : [ ]
-    },
-
-    {
-      "action" : "si saludable",
-      "format" : "if energía > 14",
-      // necesitan menos energía que las sertanas para reproducirse
-      "blockColor" : "#89a",
-      "clauses" : [ ]
-    },
-
-      {
-        "action" : "nacer",
-        "format" : "set energía (energía / 2) hatch 1 [ rt random-float 360 fd 1 ]",
-        "blockColor" : "#916da0"
-      },
-
-      {
-        "action" : "morir",
-          "format" : "die",
-        "blockColor" : "#916da0",
-      },
-
-      {
-        "action" : "probabilidad",
-        "blockColor" : "#89a",
-        "format" : "if random 100 < {0}",
-        "clauses" : [
-        ],
-        "params" : [
-          {
-            "type" : "range",
-            "min" : 0,
-            "max" : 100,
-            "step" : 0.5,
-            "default" : 20,
-            "unit" : "%",
-            "name" : "porcentaje"
-          }
-        ]
-      }
-    ]
-  };
-  </script>
-
-  </div>
-</body>
+  </body>
 </html>
